@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -9,18 +9,18 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
 </head>
 
-<body>
+<body class="page-body">
 
-    <header>
-        <a>
+    <header class="main-header">
+        <a class="main-header-logo">
             <img src="img/svg/logo.svg" width="138" height="70" alt="лого">
         </a>
-        <nav>
+        <nav class="main-navigation">
 
 
 
 
-            <ul>
+            <ul class="site-navigation">
                 <li><a href="blank.html">Информация</a></li>
                 <li><a href="blank.html">Фото и видео</a></li>
                 <li><a href="blank.html">Карта штата</a></li>
@@ -30,39 +30,39 @@
 
         </nav>
     </header>
-    <main>
+    <main class="container">
         <section>
             <img src="img/svg/title.svg" style="background-image: url(img/background.jpg)" width="1200" height="509" alt="Логотип «Sedona»">
             <img src="img/svg/saw-mask.svg" width="1200" height="57" alt="">
         </section>
 
 
-        <section>
-            <h1>
+        <section class="reasons">
+            <h1 class="reasons_title">
                 Седона — небольшой городок в Аризоне, заслуживающий большего!
             </h1>
-            <h2>
-                Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            <h2 class="reasons">
+                Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!
             </h2>
 
-            <ol>
-                <li>
+            <ol class="reasons_list">
+                <li class="reasons_item">
                     <h3>Настоящий городок</h3>
                     <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                     <a>
                         <img src="img/open-range.jpg" width="800" height="256" alt="городская среда">
                     </a>
 
-                    <ul>
-                        <li>
+                    <ul class="more_reasons_list">
+                        <li class="more_reasons_item">
                             <h3>Жильё</h3>
                             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
-                        <li>
+                        <li class="more_reasons_item">
                             <h3>Еда</h3>
                             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </li>
-                        <li>
+                        <li class="more_reasons_item">
                             <h3>Сувениры</h3>
                             <p>Не только китайского, но и местного производства!</p>
                         </li>
@@ -70,19 +70,19 @@
                     </ul>
 
                 </li>
-                <li>
+                <li class="reasons_item">
                     <h3>Там есть Мост дьявола</h3>
                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </li>
-                <li>
+                <li class="reasons_item">
                     <h3>Небольшая площадь</h3>
                     <p>Все достопримечательности находятся очень близко</p>
                 </li>
-                <li>
+                <li class="reasons_item">
                     <h3>Красивая дорога</h3>
                     <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
                 </li>
-                <li>
+                <li class="reasons_item">
                     <h3>Мало туристов</h3>
                     <p>Большинство едет в гранд каньон и толпится там</p>
                     <a>
@@ -100,38 +100,60 @@
         <section>
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <button type="button">Поиск гостиницы в Седоне</button>
+            <button class="button" type="button">Поиск гостиницы в Седоне</button>
         </section>
     </main>
-    <footer>
-        <section>
+    <footer class="main-footer">
+        <section class="footer-contacts">
             <h2>Контакты</h2>
             <p>
                 #VISITSEDONA <br> +7 800 555-86-28
             </p>
         </section>
-        <section>
+        <section class="footer-social">
             <h2>Социальные сети</h2>
-            <ul>
+            <ul class="social_list">
                 <li>
 
-                    <a href="https://twitter.com/"><img src="img/socials/twitter.svg" width="46" height="48" alt="твиттер"></a>
+                    <a class="social-button" href="https://twitter.com/"><img src="img/socials/twitter.svg" width="46" height="48" alt="твиттер"></a>
 
                 </li>
                 <li>
-                    <a href="https://facebook.com/"><img src="img/socials/facebook.svg" width="46" height="48" alt="фэйсбук"></a>
+                    <a class="social-button" href="https://facebook.com/"><img src="img/socials/facebook.svg" width="46" height="48" alt="фэйсбук"></a>
                 </li>
                 <li>
-                    <a href="https://youtube.com/"><img src="img/socials/youtube.svg" width="46" height="48" alt="ютуб"></a>
+                    <a class="social-button" href="https://youtube.com/"><img src="img/socials/youtube.svg" width="46" height="48" alt="ютуб"></a>
                 </li>
             </ul>
         </section>
-        <p>
+        <p class="footer-copyright">
             Website by
-            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </p>
     </footer>
-
+<section class="modal">
+    <h2>Поиск гостиницы в Седоне</h2>
+    <form class="booking_form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="booking_info">
+          <label for="check-in_date">Дата заезда</label>
+          <input class="date_area" id="check-in_date" type="text" name="date" placeholder="24.04.2017">
+        </p>
+    
+        <p class="booking_info">
+        
+              <label for="check-out_date">Дата</label>
+              <input class="date_area" id="check-out_date" type="text" name="date" placeholder="04.07.2017">
+            </p>
+    
+                <p class="booking_info">Взрослые:</p>
+                <p><input class="number_area" type="number" size="2" name="num" min="0" max="10" value="1"></p>
+    
+               
+                <p class="booking_info">Дети:</p>
+                <p><input class="number_area" type="number" size="0" name="num" min="0" max="10" value="1"></p>
+    </form>
+               <p><input class="modal-close" type="submit" value="Найти"></p>
+</section>
 </body>
 
 </html>

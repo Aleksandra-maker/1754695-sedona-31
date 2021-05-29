@@ -1,0 +1,19 @@
+:root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --basic-brown: #503E33;
+    --basic-neutral-brown: #604E43;
+    --basic-light-brown: #766357;
+    --basic-light-blue: #81B3D2;
+    --basic-neutral-blue: #669EC0;
+    --basic-blue: #5496BD;
+    
+    --basic-extra-light: #F2F2F2;
+    --basic-grey: #EEEEEE;
+    --basic-light-grey: #CACACA;
+    --basic-extra: #B3B3B3;
+    --basic-neutral-grey: #A9A9A9;
+    --basic-grey: #EBEBEB;
+    --basic-dark-grey: #6A6A6A;
+    --basic-dark-grey: #BDBBBC;
+}
