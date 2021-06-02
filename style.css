@@ -1,203 +1,256 @@
-                               :root {
-                                  --basic-black: #000000;
-                                  --basic-white: #ffffff;
-                                  --basic-brown: #503E33;
-                                  --basic-neutral-brown: #604E43;
-                                  --basic-light-brown: #766357;
-                                  --basic-light-blue: #81B3D2;
-                                  --basic-neutral-blue: #669EC0;
-                                  --basic-blue: #5496BD;
-                                  --basic-extra-light: #F2F2F2;
-                                  --basic-neutral: #EEEEEE;
-                                  --basic-grey: #E5E5E5;
-                                  --basic-light-grey: #CACACA;
-                                  --basic-extra: #B3B3B3;
-                                  --basic-neutral-grey: #A9A9A9;
-                                  --basic-grey: #EBEBEB;
-                                  --basic-dark-grey: #6A6A6A;
-                                  --basic-extra-grey: #BDBBBC;
-                              }
-                              
-                              body {
-                                  min-width: 1200px;
-                                  margin: 0;
-                                  padding: 0;
-                                  font-family: "PT Sans", Arial, sans-serif;
-                                  font-size: 14px;
-                                  line-height: 26px;
-                                  font-weight: 400;
-                                  color: var(--basic-black);
-                                  text-transform: uppercase;
-                                  background-color: var(--basic-white);
-                              }
-                              
-                              a {
-                                  text-decoration: none;
-                              }
-                              
-                              img {
-                                  max-width: 100%;
-                                  height: auto;
-                              }
-                              
-                              .title_foto {}
-                              
-                              .main-navigation li {
-                                  font-size: 14px;
-                                  line-height: 26px;
-                                  color: var(--basic-black);
-                                  background-color: transparent;
-                                  font-weight: bold;
-                                  float: left;
-                                  padding: 20px;
-                              }
-                              
-                              .main-navigation ul {}
-                              
-                              wjklr -.main-navigation-wrapper {
-                                  background-color: var(--basic-black);
-                              }
-                              
-                              .site-navigation {
-                                  list-style: none;
-                              }
-                              
-                              .site-navigation-current a:not([href]) {
-                                  background-color: var(--basic-black);
-                              }
-                              
-                              .site-navigation a {
-                                  color: var(--basic-black);
-                              }
-                              
-                              .site-navigation a:hover,
-                              .site-navigation a:focus {
-                                  color: var(--basic-light-blue);
-                              }
-                              
-                              .more_reasons_list {
-                                  list-style: none;
-                              }
-                              
-                              .reasons_list {
-                                  list-style: none;
-                              }
-                              
-                              .reasons_title,
-                              .reasons-text,
-                              .reasons_item {
-                                  text-align: center;
-                              }
-                              
-                              .reasons_item h3 {
-                                  font-size: 21px;
-                                  line-height: 21px;
-                                  font-weight: 700;
-                              }
-                              
-                              .item_reasons {
-                                  width: 1200px;
-                                  height: 256px;
-                                  background-color: var(--basic-neutral);
-                                  background-position: 0 0;
-                                  background-repeat: repeat;
-                              }
-                              
-                              .button {
-                                  font: inherit;
-                                  text-align: center;
-                                  color: var(--basic-white);
-                                  font-size: 21px;
-                                  line-height: 26px;
-                                  font-weight: bold;
-                                  vertical-align: middle;
-                                  text-transform: uppercase;
-                                  background-color: var(--basic-light-brown);
-                                  border: none;
-                                  width: 568px;
-                                  height: 86px;
-                              }
-                              
-                              .button:hover {
-                                  background-color: var(--basic-neutral-brown);
-                              }
-                              
-                              .button:active {
-                                  background-color: var(--basic-brown);
-                              }
-                              
-                              .date_area,
-                              .number_area {
-                                  background-color: var(--basic-extra-light);
-                                  border: none;
-                              }
-                              
-                              .modal-close {
-                                  width: 458px;
-                                  height: 58px;
-                                  background-color: var(--basic-light-blue);
-                                  color: var(--basic-white);
-                                  font-size: 21px;
-                                  line-height: 26px;
-                                  font-weight: bold;
-                                  text-transform: uppercase;
-                                  border: none;
-                              }
-                              
-                              .modal-close:hover {
-                                  background-color: var(--basic-neutral-blue);
-                              }
-                              
-                              .modal-close:active {
-                                  background-color: var(--basic-blue);
-                              }
-                              
-                              . .first_reason,
-                              .second_reason {
-                                  width: 400px;
-                                  height: 256px;
-                                  background-color: #81B3D2;
-                                  color: var(--basic-white);
-                              }
-                              
-                              .first_reason h3,
-                              .second_reason h3 {
-                                  -text-align: center;
-                                  vertical-align: middle;
-                              }
-                              
-                              .reason_foto {
-                                  width: 800px;
-                                  height: 256px;
-                              }
-                              
-                              -.main-footer {
-                                  color: var(--basic-white);
-                                  background-color: var(--basic-extra-dark);
-                                  background-image: url("img/pattern-dark.jpg");
-                                  background-position: 0 0;
-                                  background-repeat: repeat;
-                                  line-height: 21px;
-                              }
-                              
-                              .container-inner li {
-                                  list-style: none;
-                              }
-                              
-                              .social_list a {
-                                  background-color: var(--basic-light-blue);
-                                  list-style: none;
-                              }
-                              
-                              .social_list a:hover {
-                                  background-color: var(--basic-neutral-blue);
-                                  fill: red;
-                              }
-                              
-                              .social_list a:active {
-                                  background-color: var(--basic-blue);
-                              }
-                              
-                              .test:hover {
-                                  fill: red;
-                              }
+                                     :root {
+                                        --basic-black: #000000;
+                                        --basic-white: #ffffff;
+                                        --basic-brown: #503E33;
+                                        --basic-neutral-brown: #604E43;
+                                        --basic-light-brown: #766357;
+                                        --basic-light-blue: #81B3D2;
+                                        --basic-neutral-blue: #669EC0;
+                                        --basic-blue: #5496BD;
+                                        --basic-extra-light: #F2F2F2;
+                                        --basic-neutral: #EEEEEE;
+                                        --basic-grey: #E5E5E5;
+                                        --basic-light-grey: #CACACA;
+                                        --basic-extra: #B3B3B3;
+                                        --basic-neutral-grey: #A9A9A9;
+                                        --basic-grey: #EBEBEB;
+                                        --basic-dark-grey: #6A6A6A;
+                                        --basic-extra-grey: #BDBBBC;
+                                    }
+                                    
+                                    body {
+                                        min-width: 1200px;
+                                        margin: 0;
+                                        padding: 0;
+                                        font-family: "PT Sans", Arial, sans-serif;
+                                        font-size: 14px;
+                                        line-height: 26px;
+                                        font-weight: 400;
+                                        color: var(--basic-black);
+                                        text-transform: uppercase;
+                                        background-color: var(--basic-white);
+                                    }
+                                    
+                                    a {
+                                        text-decoration: none;
+                                    }
+                                    
+                                    img {
+                                        max-width: 100%;
+                                        height: auto;
+                                    }
+                                    
+                                    .title_foto {}
+                                    
+                                    .main-navigation li {
+                                        font-size: 14px;
+                                        line-height: 26px;
+                                        color: var(--basic-black);
+                                        background-color: transparent;
+                                        font-weight: bold;
+                                        float: left;
+                                        padding: 20px;
+                                    }
+                                    
+                                    .main-navigation ul {}
+                                    
+                                    wjklr -.main-navigation-wrapper {
+                                        background-color: var(--basic-black);
+                                    }
+                                    
+                                    .site-navigation {
+                                        list-style: none;
+                                    }
+                                    
+                                    .site-navigation-current a:not([href]) {
+                                        background-color: var(--basic-black);
+                                    }
+                                    
+                                    .site-navigation a {
+                                        color: var(--basic-black);
+                                    }
+                                    
+                                    .site-navigation a:hover,
+                                    .site-navigation a:focus {
+                                        color: var(--basic-light-blue);
+                                    }
+                                    
+                                    .more_reasons_list {
+                                        list-style: none;
+                                    }
+                                    
+                                    .reasons_list {
+                                        list-style: none;
+                                    }
+                                    
+                                    .reasons_title,
+                                    .reasons-text,
+                                    .reasons_item {
+                                        text-align: center;
+                                    }
+                                    
+                                    .reasons_item h3 {
+                                        font-size: 21px;
+                                        line-height: 21px;
+                                        font-weight: 700;
+                                    }
+                                    
+                                    .item_reasons {
+                                        width: 1200px;
+                                        height: 256px;
+                                        background-color: var(--basic-neutral);
+                                        background-position: 0 0;
+                                        background-repeat: repeat;
+                                    }
+                                    
+                                    .button {
+                                        font: inherit;
+                                        text-align: center;
+                                        color: var(--basic-white);
+                                        font-size: 21px;
+                                        line-height: 26px;
+                                        font-weight: bold;
+                                        vertical-align: middle;
+                                        text-transform: uppercase;
+                                        background-color: var(--basic-light-brown);
+                                        border: none;
+                                        width: 568px;
+                                        height: 86px;
+                                    }
+                                    
+                                    .button:hover {
+                                        background-color: var(--basic-neutral-brown);
+                                    }
+                                    
+                                    .button:active {
+                                        background-color: var(--basic-brown);
+                                    }
+                                    
+                                    .date_area,
+                                    .number_area {
+                                        background-color: var(--basic-extra-light);
+                                        border: none;
+                                    }
+                                    
+                                    .modal-close {
+                                        width: 458px;
+                                        height: 58px;
+                                        background-color: var(--basic-light-blue);
+                                        color: var(--basic-white);
+                                        font-size: 21px;
+                                        line-height: 26px;
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                        border: none;
+                                    }
+                                    
+                                    .modal-close:hover {
+                                        background-color: var(--basic-neutral-blue);
+                                    }
+                                    
+                                    .modal-close:active {
+                                        background-color: var(--basic-blue);
+                                    }
+                                    
+                                    .first_reason,
+                                    .second_reason {
+                                        width: 400px;
+                                        height: 256px;
+                                        background-color: var(--basic-light-blue);
+                                        color: var(--basic-white);
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                    }
+                                    
+                                    .first_reason h3,
+                                    .second_reason h3 {}
+                                    
+                                    .reason_foto {
+                                        width: 800px;
+                                        height: 256px;
+                                    }
+                                    
+                                    .main-footer {
+                                        color: var(--basic-black);
+                                        background-color: var(--basic-white);
+                                        line-height: 26px;
+                                    }
+                                    
+                                    .container-inner li {
+                                        list-style: none;
+                                    }
+                                    
+                                    .social_list {
+                                        list-style: none;
+                                    }
+                                    
+                                    .social_list a {
+                                        background-color: var(--basic-light-blue);
+                                        list-style: none;
+                                    }
+                                    
+                                    .social_list a:hover {
+                                        background-color: var(--basic-neutral-blue);
+                                    }
+                                    
+                                    .social_list a:active {
+                                        background-color: var(--basic-blue);
+                                    }
+                                    
+                                    .filter {
+                                        width: 1200px;
+                                        height: 217px;
+                                        color: var(--basic-white);
+                                        background-image: url(img/background-catalog\ \(1\).jpg);
+                                        background-repeat: no-repeat;
+                                    }
+                                    
+                                    .button_more {
+                                        width: 110px;
+                                        height: 27px;
+                                        color: var(--basic-white);
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        font-weight: bold;
+                                        background-color: var(--basic-light-blue);
+                                        text-transform: uppercase;
+                                        border: none;
+                                        vertical-align: middle;
+                                    }
+                                    
+                                    .button_more:hover {
+                                        background-color: var(--basic-neutral-blue);
+                                    }
+                                    
+                                    .button_more:active {
+                                        background-color: var(--basic-blue);
+                                    }
+                                    
+                                    .button_booking {
+                                        width: 142px;
+                                        height: 27px;
+                                        color: var(--basic-white);
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        font-weight: bold;
+                                        background-color: var(--basic-light-brown);
+                                        text-transform: uppercase;
+                                        border: none;
+                                        vertical-align: middle;
+                                    }
+                                    
+                                    .button_booking:hover {
+                                        background-color: var(--basic-neutral-brown);
+                                    }
+                                    
+                                    .button_booking:active {
+                                        background-color: var(--basic-brown);
+                                    }
+                                    
+                                    .sorting_list h3 {
+                                        font-size: 21px;
+                                        line-height: 26px;
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                    }
