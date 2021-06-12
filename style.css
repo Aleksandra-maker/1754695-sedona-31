@@ -295,10 +295,6 @@ img {
     line-height: 26px;
 }
 
-.container-inner li {
-    list-style: none;
-}
-
 .social_list {
     list-style: none;
 }
@@ -321,14 +317,6 @@ img {
 
 .social_list a:active {
     background-color: var(--basic-blue);
-}
-
-.filter {
-    width: 1200px;
-    height: 217px;
-    color: var(--basic-white);
-    background-image: url(img/background-catalog\ \(1\).jpg);
-    background-repeat: no-repeat;
 }
 
 .button_more {
@@ -375,9 +363,74 @@ img {
     background-color: var(--basic-brown);
 }
 
-.filter-inner {
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    height: 217px;
+    color: var(--basic-white);
+    background-image: url(img/background-catalog\ \(1\).jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-item {
     display: grid;
-    text-align: left;
+    grid-template-columns: 200px;
+    align-items: center;
+    padding: 0;
+    margin-top: 26px;
+    margin-bottom: 31px;
+    margin-left: 60px;
+}
+
+.fieldset {
+    border: 0 none;
+}
+
+.filter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cost {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-left: auto;
+    min-width: 300px; 
+    align-self: center;
+    margin-right: 73px;  
+}
+
+.cost-item {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.cost-button {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    width: 137px;
+    height: 36px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-image: none;
+    background-color: transparent;
+    border: 2px solid var(--basic-white);
+    box-sizing: border-box;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.cost-button:hover {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
 }
 
 .sorting-list {
@@ -388,15 +441,6 @@ img {
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.simple-grid-name {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
 }
 
 .section-item {
