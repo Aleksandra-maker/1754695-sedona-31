@@ -271,7 +271,7 @@ img {
     text-transform: uppercase;
     background-color: var(--basic-light-brown);
     border: none;
-    width: 568px;
+    width: 100%;
     height: 86px;
 }
 
@@ -283,14 +283,159 @@ img {
     background-color: var(--basic-brown);
 }
 
-.date_area,
-.number_area {
+.date-area,
+.number-area {
     background-color: var(--basic-extra-light);
     border: none;
 }
 
+.tour-date {
+    margin-top: 56px;
+}
+
+.tour-date h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.tour-date p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: center;
+    margin-left: 183px;
+    margin-top: 34px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    padding: 55px;
+}
+
+.booking-info {
+    display: flex;
+    flex-direction: row;
+    -flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0;
+    -margin: auto;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    height: 38px;
+    position: relative;
+}
+
+.booking-info label {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.booking-info input {
+    width: 346px;
+    height: 100%;
+    padding-right: 230px;
+    padding-left: 14px;
+    font: inherit;
+    box-sizing: border-box;
+    background-color: var(--basic-extra-light);
+}
+
+.calendar {
+    position: absolute;
+    width: 21px;
+    height: 23px;
+    background-image: url(img/svg/calendar.svg);
+    right: 20px;
+    top: 8px;
+    border: none;
+}
+
+.booking-info input::-webkit-input-placeholder {
+    color: var(--basic-black)
+}
+
+.booking-info input::-moz-placeholder {
+    color: var(--basic-black)
+}
+
+.booking-info input:-moz-placeholder {
+    color: var(--basic-black)
+}
+
+.booking-info input:-ms-input-placeholder {
+    color: var(--basic-black)
+}
+
+.booking-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.booking-item label {
+    margin-left: 53px;
+    margin: 0;
+}
+
+.booking-item input {
+    width: 114px;
+    padding-right: 14px;
+    padding-left: 13px;
+    font: inherit;
+    box-sizing: border-box;
+    background-color: var(--basic-extra-light);
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 38px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    background-position: 0 0;
+    padding: 0;
+}
+
+.modal-search {
+    top: 250px;
+    bottom: auto;
+    width: 568px;
+    margin-top: 40px;
+    z-index: 300;
+}
+
 .modal-close {
-    width: 458px;
+    display: block;
+    width: 100%;
     height: 58px;
     background-color: var(--basic-light-blue);
     color: var(--basic-white);
@@ -299,6 +444,7 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     border: none;
+    margin-top: 54px;
 }
 
 .modal-close:hover {
@@ -365,7 +511,7 @@ img {
     fill: var(--basic-blue-active);
 }
 
-.button_more {
+.button-more {
     width: 110px;
     height: 27px;
     margin: 0;
@@ -380,15 +526,15 @@ img {
     vertical-align: middle;
 }
 
-.button_more:hover {
+.button-more:hover:hover {
     background-color: var(--basic-neutral-blue);
 }
 
-.button_more:active {
+.button-more:active {
     background-color: var(--basic-blue);
 }
 
-.button_booking {
+.button-booking {
     width: 142px;
     height: 27px;
     color: var(--basic-white);
@@ -401,11 +547,11 @@ img {
     vertical-align: middle;
 }
 
-.button_booking:hover {
+.button-booking:hover {
     background-color: var(--basic-neutral-brown);
 }
 
-.button_booking:active {
+.button-booking:active {
     background-color: var(--basic-brown);
 }
 
@@ -602,8 +748,6 @@ img {
     left: 248px;
 }
 
-.range-filter {}
-
 .price-controls {
     display: flex;
     justify-content: space-around;
@@ -738,8 +882,13 @@ span {
     fill: var(--basic-extra-grey);
 }
 
-.map {
-    background-image: url(img/map.png);
+.map img {
+    background: url(img/map.png);
+    display: block;
     width: 1199px;
     height: 594px;
+}
+
+.map iframe {
+    border: none;
 }
