@@ -4,6 +4,7 @@
     --basic-brown: #503E33;
     --basic-neutral-brown: #604E43;
     --basic-light-brown: #766357;
+    --basic-brown-fill: #847870;
     --basic-light-blue: #81B3D2;
     --basic-neutral-blue: #669EC0;
     --basic-blue: #5496BD;
@@ -14,7 +15,7 @@
     --basic-light-grey: #CACACA;
     --basic-extra: #B3B3B3;
     --basic-neutral-grey: #A9A9A9;
-    --basic-grey: #EBEBEB;
+    --basic-grey-special: #EBEBEB;
     --basic-dark-grey: #6A6A6A;
     --basic-extra-grey: #BDBBBC;
     --basik-white-grey: #EDEDED;
@@ -99,6 +100,22 @@ img {
     padding-bottom: 16px;
 }
 
+.site-nav-link {
+    color: var(--basic-black);
+}
+
+.site-nav-link:hover {
+    color: var(--basic-light-blue);
+}
+
+.site-nav-link:active {
+    color: var(--basic-extra);
+}
+
+.site-nav-link:focus {
+    color: var(--basic-light-brown);
+}
+
 .site-nav-item:nth-child(4n+1) {
     padding-left: 73px;
 }
@@ -115,23 +132,6 @@ img {
 .site-nav-item:nth-child(4n+4) {
     text-align: right;
     padding-right: 72px;
-}
-
-.main-navigation-wrapper {
-    background-color: var(--basic-black);
-}
-
-.site-navigation-current a:not([href]) {
-    background-color: var(--basic-black);
-}
-
-.site-navigation a {
-    color: var(--basic-black);
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-    color: var(--basic-light-blue);
 }
 
 .background {
@@ -289,6 +289,74 @@ img {
     border: none;
 }
 
+.number-area {
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.date-area:hover,
+.number-area:hover {
+    background-color: var(--basic-grey-special);
+}
+
+.date-area:focus,
+.number-area:focus {
+    outline: none;
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-grey);
+    border-radius: 0px;
+}
+
+.btn-minus {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    right: 116px;
+    top: 0px;
+    border: none;
+}
+
+.minus-svg {
+    fill: var(--basic-neutral-grey);
+    top: 18px;
+    left: 13px;
+    position: absolute;
+}
+
+.btn-plus {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    right: 39px;
+    top: 0px;
+    border: none;
+}
+
+.plus-svg {
+    fill: var(--basic-neutral-grey);
+}
+
+.minus-svg:hover,
+.plus-svg:hover {
+    fill: var(--basic-black);
+}
+
+.minus-svg:active,
+.plus-svg:active {
+    fill: var(--basic-light-blue);
+}
+
 .tour-date {
     margin-top: 56px;
 }
@@ -363,10 +431,21 @@ img {
     position: absolute;
     width: 21px;
     height: 23px;
-    background-image: url(img/svg/calendar.svg);
     right: 20px;
     top: 8px;
     border: none;
+}
+
+.calendar-svg {
+    fill: var(--basic-neutral-grey);
+}
+
+.calendar-svg:hover {
+    fill: var(--basic-black);
+}
+
+.calendar-svg:active {
+    fill: var(--basic-light-blue);
 }
 
 .booking-info input::-webkit-input-placeholder {
@@ -462,6 +541,7 @@ img {
     color: var(--basic-black);
     background-color: var(--basic-white);
     line-height: 26px;
+    margin-top: 15px;
 }
 
 .visit-contact {
@@ -497,6 +577,7 @@ img {
     height: 48px;
     background-color: var(--basic-light-blue);
     color: inherit;
+    margin-top: 21px;
 }
 
 .social-button:hover {
@@ -526,12 +607,14 @@ img {
     vertical-align: middle;
 }
 
-.button-more:hover:hover {
+.button-more:hover {
     background-color: var(--basic-neutral-blue);
+    color: var(--basic-white);
 }
 
 .button-more:active {
     background-color: var(--basic-blue);
+    color: var(--basic-blue-active);
 }
 
 .button-booking {
@@ -549,10 +632,12 @@ img {
 
 .button-booking:hover {
     background-color: var(--basic-neutral-brown);
+    color: var(--basic-white);
 }
 
 .button-booking:active {
     background-color: var(--basic-brown);
+    color: var(--basic-brown-fill);
 }
 
 .filter-inner {
@@ -595,6 +680,23 @@ img {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
+    color: var(--basic-extra);
+    border-bottom: 1px dashed var(--basic-light-blue);
+}
+
+.filter-inner-item:hover {
+    color: var(--basic-light-blue);
+    border-bottom: 1px dashed var(--basic-light-blue);
+}
+
+.filter-inner-item:active {
+    color: var(--basic-black);
+    border-bottom: none;
+}
+
+.filter-inner-item:focus {
+    color: var(--basic-light-blue);
+    border-bottom: none;
 }
 
 .sort {
@@ -617,6 +719,26 @@ img {
     background-image: none;
     background-color: transparent;
     border: transparent;
+}
+
+.icon-down-svg path,
+.icon-up-svg {
+    fill: var(--basic-light-grey);
+}
+
+.icon-down-svg:hover path,
+.icon-up-svg:hover {
+    fill: var(--basic-black);
+}
+
+.icon-down-svg:active path,
+.icon-up-svg:active {
+    fill: var(--basic-light-blue);
+}
+
+.icon-down-svg:focus path,
+.icon-up-svg:focus {
+    fill: var(--basic-light-blue);
 }
 
 .filter {
@@ -665,10 +787,40 @@ img {
     position: absolute;
     left: -42px;
     top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--basic-white);
+    width: 23px;
+    height: 23px;
+    background-image: url(img/svg/checkbox-off.svg);
     border-radius: 3px;
+}
+
+.filter-input-checkbox:checked+label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url(img/svg/checkbox-on.svg);
+}
+
+.filter-input-checkbox:disabled:checked+label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url(img/svg/checkbox-on-disabled.svg);
+}
+
+.filter-input-checkbox:disabled+label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url(img/svg/checkbox-off-disabled.svg);
 }
 
 .filter-form {
@@ -732,6 +884,20 @@ img {
     left: 0;
     width: 4px;
     height: 4px;
+    padding: 0;
+    border: 8px solid var(--basic-white);
+    background-color: var(--toggle);
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 var(--toggle-shadow);
+    cursor: pointer;
+}
+
+.toggle:hover {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 7px;
+    height: 7px;
     padding: 0;
     border: 8px solid var(--basic-white);
     background-color: var(--toggle);
@@ -824,6 +990,19 @@ img {
     grid-gap: 6px;
 }
 
+.link-hotel {
+    color: var(--basic-black);
+    grid-column: 1/3;
+}
+
+.link-hotel:hover {
+    color: var(--basic-light-blue);
+}
+
+.link-hotel:active {
+    color: var(--basic-extra);
+}
+
 .hotel-img {
     width: 130px;
     height: 90px;
@@ -868,6 +1047,10 @@ span {
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
+}
+
+.footer-copyright {
+    margin-top: 29px;
 }
 
 .footer-copy-svg {
