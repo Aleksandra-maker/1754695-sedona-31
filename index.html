@@ -7,8 +7,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -61,24 +60,28 @@
 
                         </div>
                         <ul class="more-reasons-list">
-                            <li class="more-reasons-item">
+                            <li class="more-reasons-item more-reasons-item--spec">
                                 <div class="more-reasons-wrap">
                                     <img src="img/svg/house.svg" width="75" height="72" alt="Изображение домика">
                                     <h3 class="more-reasons-caption">Жильё</h3>
-                                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                                    <p class="more-reasons-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                                    </p>
                                 </div>
                             </li>
                             <li class="more-reasons-item">
                                 <div class="more-reasons-wrap">
                                     <img src="img/svg/food.svg" width="75" height="70" alt="Изображение бургера">
                                     <h3 class="more-reasons-caption">Еда</h3>
-                                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</ </div>
+                                    <p class="more-reasons-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                                    </p>
+                                </div>
                             </li>
                             <li class="more-reasons-item">
                                 <div class="more-reasons-wrap">
                                     <img src="img/svg/present.svg" width="64" height="77" alt="Изображение подарка">
                                     <h3 class="more-reasons-caption">Сувениры</h3>
-                                    <p>Не только китайского, но и местного производства!</p>
+                                    <p class="more-reasons-description">Не только китайского, но и местного производства!
+                                    </p>
                                 </div>
                             </li>
                         </ul>
@@ -124,89 +127,96 @@
                 </ol>
             </section>
             <section class="tour-date">
-                <h2>Заинтересовались?</h2>
-                <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-            </section>
-            <section class="modal modal-search">
-                <button class="button" type="button">Поиск гостиницы в Седоне</button>
-                <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p class="booking-info">
-                        <label for="check-in-date">Дата заезда:</label>
-                        <input class="date-area" id="check-in-date" type="text" name="date" placeholder="24.04.2017">
-                        <button class="calendar">
-                            <svg class="calendar-svg" width="21" height="23" viewBox="0 0 21 23" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
-                                    fill="" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4.59375 9.22498H7.21875V11.291H4.59375V9.22498ZM4.59375 12.668H7.21875V14.735H4.59375V12.668ZM7.21875 16.112H4.59375V18.178H7.21875V16.112ZM9.18775 16.112H11.8127V18.178H9.18775V16.112ZM11.8127 12.668H9.18775V14.735H11.8127V12.668ZM9.18775 9.22498H11.8127V11.291H9.18775V9.22498ZM16.4058 16.112H13.7808V18.178H16.4058V16.112ZM13.7808 12.668H16.4058V14.735H13.7808V12.668ZM16.4058 9.22498H13.7808V11.291H16.4058V9.22498Z"
-                                    fill="" />
-                            </svg>
-                        </button>
-                    </p>
-                    <p class="booking-info">
-                        <label for="check-out-date">Дата выезда:</label>
-                        <input class="date-area" id="check-out-date" type="text" name="date" placeholder="04.07.2017">
-                        <button class="calendar">
-                            <svg class="calendar-svg" width="21" height="23" viewBox="0 0 21 23" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
-                                    fill="" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4.59375 9.22498H7.21875V11.291H4.59375V9.22498ZM4.59375 12.668H7.21875V14.735H4.59375V12.668ZM7.21875 16.112H4.59375V18.178H7.21875V16.112ZM9.18775 16.112H11.8127V18.178H9.18775V16.112ZM11.8127 12.668H9.18775V14.735H11.8127V12.668ZM9.18775 9.22498H11.8127V11.291H9.18775V9.22498ZM16.4058 16.112H13.7808V18.178H16.4058V16.112ZM13.7808 12.668H16.4058V14.735H13.7808V12.668ZM16.4058 9.22498H13.7808V11.291H16.4058V9.22498Z"
-                                    fill="" />
-                            </svg>
-                        </button>
-                    </p>
-                    <div class="booking-item">
-                        <p class="booking-info">
-                            <label for="adult">Взрослые:</label>
-                            <input class="number-area" type="number" name="num" min="0" max="10" value="1">
-                            <button class="btn-minus">
-                                <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="12" height="3" fill="" />
-                                </svg>
-                            </button>
-                            <button class="btn-plus">
-                                <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                                        fill="" />
-                                </svg>
-                            </button>
-                        </p>
-                        <p class="booking-info">
-                            <label for="kids">Дети:</label>
-                            <input class="number-area" type="number" name="num" min="0" max="10" value="1">
-                            <button class="btn-minus">
-                                <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="12" height="3" fill="" />
-                                </svg>
-                            </button>
-                            <button class="btn-plus">
-                                <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                                        fill="" />
-                                </svg>
-                            </button>
-                        </p>
-                    </div>
-                    <input class="modal-close" type="submit" value="Найти">
-                </form>
+                <h2 class="tour-date-caption">Заинтересовались?</h2>
+                <p class="tour-date-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне
+                </p>
+                <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
+                <section class="modal modal-search">
 
+                    <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+                        <p class="booking-info">
+                            <label for="check-in-date">Дата заезда:</label>
+                            <input class="date-area" id="check-in-date" type="text" name="date" placeholder="24 апреля 2017">
+                            <button class="calendar">
+                                <svg class="calendar-svg" width="21" height="23" viewBox="0 0 21 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
+                                        fill="" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.59375 9.22498H7.21875V11.291H4.59375V9.22498ZM4.59375 12.668H7.21875V14.735H4.59375V12.668ZM7.21875 16.112H4.59375V18.178H7.21875V16.112ZM9.18775 16.112H11.8127V18.178H9.18775V16.112ZM11.8127 12.668H9.18775V14.735H11.8127V12.668ZM9.18775 9.22498H11.8127V11.291H9.18775V9.22498ZM16.4058 16.112H13.7808V18.178H16.4058V16.112ZM13.7808 12.668H16.4058V14.735H13.7808V12.668ZM16.4058 9.22498H13.7808V11.291H16.4058V9.22498Z"
+                                        fill="" />
+                                </svg>
+                            </button>
+                        </p>
+                        <p class="booking-info">
+                            <label for="check-out-date">Дата выезда:</label>
+                            <input class="date-area" id="check-out-date" type="text" name="date" placeholder="04 июля 2017">
+                            <button class="calendar">
+                                <svg class="calendar-svg" width="21" height="23" viewBox="0 0 21 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
+                                        fill="" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.59375 9.22498H7.21875V11.291H4.59375V9.22498ZM4.59375 12.668H7.21875V14.735H4.59375V12.668ZM7.21875 16.112H4.59375V18.178H7.21875V16.112ZM9.18775 16.112H11.8127V18.178H9.18775V16.112ZM11.8127 12.668H9.18775V14.735H11.8127V12.668ZM9.18775 9.22498H11.8127V11.291H9.18775V9.22498ZM16.4058 16.112H13.7808V18.178H16.4058V16.112ZM13.7808 12.668H16.4058V14.735H13.7808V12.668ZM16.4058 9.22498H13.7808V11.291H16.4058V9.22498Z"
+                                        fill="" />
+                                </svg>
+                            </button>
+                        </p>
+                        <div class="booking-item">
+                            <p class="booking-item-type">
+                                <label for="adult">Взрослые:</label>
+                                <div class="booking-number-input">
+                                    <button class="btn-minus">
+                                    <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="12" height="3" fill="" />
+                                    </svg>
+                                    </button>
+                                    <input class="number-area" type="number" name="num" min="0" max="10" value="1">
+                                    <button class="btn-plus">
+                                    <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                                            fill="" />
+                                    </svg>
+                                    </button>
+                                </div>
+                            </p>
+                            <p class="booking-item-type">
+                                <label for="kids">Дети:</label>
+                                <div class="booking-number-input">
+                                    <button class="btn-minus">
+                                    <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="12" height="3" fill="" />
+                                    </svg>
+                                    </button>
+                                    <input class="number-area" type="number" name="num" min="0" max="10" value="1">
+
+                                    <button class="btn-plus">
+                                    <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                                            fill="" />
+                                    </svg>
+                                </button>
+                                </div>
+                            </p>
+                        </div>
+                        <input class="modal-close" type="submit" value="Найти">
+                    </form>
+
+                </section>
             </section>
+
+
             <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249109.4830554523!2d-111.89851514779546!3d34.88006275899473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1624807554655!5m2!1sru!2sru"
-                    width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy"
-                    title="Карта города Седоны"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249109.4830554523!2d-111.89851514779546!3d34.88006275899473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1624807554655!5m2!1sru!2sru"
+                    width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy" title="Карта города Седоны"></iframe>
             </div>
         </main>
         <footer class="main-footer">
@@ -223,8 +233,7 @@
                     <li>
                         <a class="social-button" href="https://twitter.com/">
                             <span class="visually-hidden">Твиттер</span>
-                            <svg width="17" height="17" viewBox="0 0 17 17" fill="#fff"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.949 1.14397C12.634 0.647967 13.933 1.41397 14.526 2.32297C15.199 2.09197 15.857 1.84197 16.537 1.61497C16.5239 
                             2.30133 16.2107 2.94749 15.68 3.38297C16.365 3.55297 16.984 2.89197 16.984 2.89197C16.815 3.89197 15.978 4.67997 15.421 
                             4.91597C15.19 11.666 12.246 16.133 5.344 15.998H4.898C4.488 15.998 0.734 15.538 0 14.111C2.271 14.307 3.893 13.689 4.693 
@@ -248,8 +257,7 @@
                     <li>
                         <a class="social-button" href="https://youtube.com/">
                             <span class="visually-hidden">Ютуб</span>
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="#fff"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65
                              0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="#fff" />
                             </svg>

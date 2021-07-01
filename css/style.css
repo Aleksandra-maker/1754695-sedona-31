@@ -1,6 +1,7 @@
 :root {
     --basic-black: #000000;
     --basic-white: #ffffff;
+    --basic-transparent-white: #ffffffaa;
     --basic-brown: #503E33;
     --basic-neutral-brown: #604E43;
     --basic-light-brown: #766357;
@@ -25,6 +26,7 @@
 }
 
 .page-body-container {
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -162,13 +164,11 @@ img {
     margin-bottom: 20px;
 }
 
-
 .title-mask {
     position: absolute;
     z-index: 100;
     left: 0;
     bottom: 5px;
-    
 }
 
 .title-foto {
@@ -195,6 +195,7 @@ img {
     text-align: center;
     justify-self: center;
 }
+
 -.more_reasons_list {
     list-style: none;
     grid-column: 1 / 4;
@@ -301,8 +302,8 @@ img {
 .reasons-item-container {}
 
 .reasons-item-wrap {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 46px;
+    padding-bottom: 54px;
 }
 
 .reasons-item--spec .reasons-item-wrap {
@@ -312,8 +313,9 @@ img {
 
 .reasons-caption {
     padding: 0;
-    margin: 0 auto 30px;
-    width: 150px;
+    margin: 0 auto 45px;
+    margin-bottom: 27px;
+    width: 151px;
     text-align: center;
     font-weight: bold;
     font-size: 21px;
@@ -328,6 +330,7 @@ img {
     text-align: center;
     padding: 0;
     margin: 0 auto 20px;
+    margin-bottom: 23px;
     width: 100px;
     font-size: 14px;
     line-height: 21px;
@@ -340,7 +343,7 @@ img {
 .reasons-description {
     padding: 0;
     margin: 0 auto;
-    width: 250px;
+    width: 270px;
     text-align: center;
     line-height: 21px;
 }
@@ -395,21 +398,38 @@ img {
 
 .more-reasons-wrap {
     padding-top: 56px;
-    padding-bottom: 30px;
+    padding-bottom: 75px;
 }
 
 .more-reasons-caption {
     padding: 0;
     margin: 0 auto 45px;
-    margin-top: 30px;
+    margin-top: 23px;
+    margin-bottom: 27px;
     width: 103px;
     text-align: center;
     font-weight: 700;
     font-size: 21px;
-    line-height: 21px;  
+    line-height: 21px;
 }
 
-.button {
+.more-reasons-item--spec {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.more-reasons-description {
+    padding: 0;
+    margin: 0 auto;
+    width: 297px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.button-search {
     font: inherit;
     text-align: center;
     color: var(--basic-white);
@@ -420,15 +440,16 @@ img {
     text-transform: uppercase;
     background-color: var(--basic-light-brown);
     border: none;
-    width: 100%;
+    width: 568px;
     height: 86px;
+    padding: 0;
 }
 
-.button:hover {
+.button-search:hover {
     background-color: var(--basic-neutral-brown);
 }
 
-.button:active {
+.button-search:active {
     background-color: var(--basic-brown);
 }
 
@@ -436,6 +457,11 @@ img {
 .number-area {
     background-color: var(--basic-extra-light);
     border: none;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-transform: uppercase;
 }
 
 .number-area {
@@ -467,28 +493,33 @@ input[type="number"]:focus {
     border-radius: 0px;
 }
 
+.booking-number-input {
+    display: flex;
+    -background-color: red;
+}
+
 .btn-minus {
-    position: absolute;
+    -position: absolute;
     width: 38px;
     height: 38px;
-    right: 116px;
-    top: 0px;
+    -right: 116px;
+    -top: 0px;
     border: none;
 }
 
 .minus-svg {
     fill: var(--basic-neutral-grey);
-    top: 18px;
-    left: 13px;
-    position: absolute;
+    -top: 18px;
+    -left: 13px;
+    -position: absolute;
 }
 
 .btn-plus {
-    position: absolute;
+    -position: absolute;
     width: 38px;
     height: 38px;
-    right: 39px;
-    top: 0px;
+    -right: 39px;
+    -top: 0px;
     border: none;
 }
 
@@ -507,27 +538,33 @@ input[type="number"]:focus {
 }
 
 .tour-date {
+    position: relative;
     margin-top: 56px;
+    text-align: center;
+    margin: 0;
 }
 
-.tour-date h2 {
+.tour-date-caption {
     font-weight: 700;
     font-size: 30px;
     line-height: 24px;
     text-align: center;
-    vertical-align: center;
-    padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 57px;
+    padding-bottom: 50px;
+    padding-bottom: 33px;
 }
 
-.tour-date p {
+.tour-date-description {
+    padding: 0 300px 0;
+    min-height: 92px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
     vertical-align: center;
-    margin-left: 183px;
-    margin-top: 34px;
+    margin: auto;
 }
 
 .booking-form {
@@ -552,7 +589,7 @@ input[type="number"]:focus {
     -margin: auto;
     width: 100%;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     justify-content: space-between;
     height: 38px;
     position: relative;
@@ -574,6 +611,54 @@ input[type="number"]:focus {
     font: inherit;
     box-sizing: border-box;
     background-color: var(--basic-extra-light);
+}
+
+.booking-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    height: 38px;
+    position: relative;
+}
+
+.booking-item-type {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.booking-item label {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: middle;
+    font-weight: bold;
+    align-self: center;
+}
+
+.booking-item label[for="kids"] {
+    margin-left: 50px;
+}
+
+.number-area {
+    width: 38px;
+    height: 38px;
+    -padding-right: 230px;
+    -padding-left: 14px;
+    font: inherit;
+    box-sizing: border-box;
+    background-color: var(--basic-extra-light);
+    align-self: center;
 }
 
 .calendar {
@@ -625,7 +710,8 @@ input[type="number"]:focus {
     margin: 0;
 }
 
-.booking-item input {
+
+/* .booking-item input {
     width: 114px;
     padding-right: 14px;
     padding-left: 13px;
@@ -635,10 +721,10 @@ input[type="number"]:focus {
     margin-left: 40px;
     margin-right: 40px;
     height: 38px;
-}
+} */
 
 .modal {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -654,7 +740,7 @@ input[type="number"]:focus {
 }
 
 .modal-search {
-    display: none;
+    display: ;
     top: 250px;
     bottom: auto;
     width: 568px;
@@ -673,7 +759,8 @@ input[type="number"]:focus {
     font-weight: bold;
     text-transform: uppercase;
     border: none;
-    margin-top: 54px;
+    margin-top: 25px;
+    padding: 0;
 }
 
 .modal-close:hover {
@@ -685,23 +772,27 @@ input[type="number"]:focus {
 }
 
 .main-footer {
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     color: var(--basic-black);
-    background-color: var(--basic-white);
+    background-color: var(--basic-transparent-white);
     line-height: 26px;
-    margin-top: 15px;
+    bottom: 20px;
+    width: 100%;
 }
 
 .visit-contact {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    margin-left: 58px;
 }
 
 .footer-contacts {
     margin: 0;
+    padding: 0;
 }
 
 .footer-phone {
@@ -1202,6 +1293,9 @@ span {
 
 .footer-copyright {
     margin-top: 29px;
+    margin-right: 52px;
+    align-items: center;
+    padding: 0;
 }
 
 .footer-copy-svg {
@@ -1225,4 +1319,5 @@ span {
 
 .map iframe {
     border: none;
+    overflow: hidden;
 }
