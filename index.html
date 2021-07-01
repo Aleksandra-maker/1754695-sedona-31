@@ -7,7 +7,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -36,12 +37,12 @@
             </nav>
         </header>
         <main class="container">
-            <section class="title_foto">
-                <img class="background" src="img/svg/title.svg" width="1200" height="509" alt="Логотип «Sedona»">
-                <img class="mask" src="img/svg/saw-mask.svg " width="1200" height="57" alt="">
+            <section class="title-foto">
+                <img class="title-background" src="img/svg/title.svg" width="1200" height="509" alt="Логотип «Sedona»">
+                <img class="title-mask" src="img/svg/saw-mask.svg " width="1200" height="57" alt="">
             </section>
             <section class="reasons">
-                <h1 class="reasons_title">
+                <h1 class="reasons-title">
                     Седона — небольшой городок в Аризоне, заслуживающий большего!
                 </h1>
                 <h2 class="reasons-text">
@@ -53,26 +54,32 @@
                             <div class="reasons-item-wrap">
                                 <h3 class="reasons-caption">Настоящий городок</h3>
                                 <p class="reasons-numbers">— №1 —</p>
-                                <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                                <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь
+                                </p>
                             </div>
 
 
                         </div>
                         <ul class="more-reasons-list">
-                            <li class="more_reasons_item">
-                                <img src="img/svg/house.svg" width="75" height="72" alt="Изображение домика">
-                                <h3>Жильё</h3>
-                                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                            <li class="more-reasons-item">
+                                <div class="more-reasons-wrap">
+                                    <img src="img/svg/house.svg" width="75" height="72" alt="Изображение домика">
+                                    <h3 class="more-reasons-caption">Жильё</h3>
+                                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                                </div>
                             </li>
-                            <li class="more_reasons_item">
-                                <img src="img/svg/food.svg" width="75" height="70" alt="Изображение бургера">
-                                <h3>Еда</h3>
-                                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                            <li class="more-reasons-item">
+                                <div class="more-reasons-wrap">
+                                    <img src="img/svg/food.svg" width="75" height="70" alt="Изображение бургера">
+                                    <h3 class="more-reasons-caption">Еда</h3>
+                                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</ </div>
                             </li>
-                            <li class="more_reasons_item">
-                                <img src="img/svg/present.svg" width="64" height="77" alt="Изображение подарка">
-                                <h3>Сувениры</h3>
-                                <p>Не только китайского, но и местного производства!</p>
+                            <li class="more-reasons-item">
+                                <div class="more-reasons-wrap">
+                                    <img src="img/svg/present.svg" width="64" height="77" alt="Изображение подарка">
+                                    <h3 class="more-reasons-caption">Сувениры</h3>
+                                    <p>Не только китайского, но и местного производства!</p>
+                                </div>
                             </li>
                         </ul>
                     </li>
@@ -156,7 +163,7 @@
                     <div class="booking-item">
                         <p class="booking-info">
                             <label for="adult">Взрослые:</label>
-                            <input class="number-area" type="number" size="2" name="num" min="0" max="10" value="1">
+                            <input class="number-area" type="number" name="num" min="0" max="10" value="1">
                             <button class="btn-minus">
                                 <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -174,7 +181,7 @@
                         </p>
                         <p class="booking-info">
                             <label for="kids">Дети:</label>
-                            <input class="number-area" type="number" size="0" name="num" min="0" max="10" value="1">
+                            <input class="number-area" type="number" name="num" min="0" max="10" value="1">
                             <button class="btn-minus">
                                 <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -196,8 +203,10 @@
 
             </section>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249109.4830554523!2d-111.89851514779546!3d34.88006275899473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1624807554655!5m2!1sru!2sru"
-                    width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy" title="Карта города Седоны"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249109.4830554523!2d-111.89851514779546!3d34.88006275899473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1624807554655!5m2!1sru!2sru"
+                    width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy"
+                    title="Карта города Седоны"></iframe>
             </div>
         </main>
         <footer class="main-footer">
@@ -214,7 +223,8 @@
                     <li>
                         <a class="social-button" href="https://twitter.com/">
                             <span class="visually-hidden">Твиттер</span>
-                            <svg width="17" height="17" viewBox="0 0 17 17" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="#fff"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.949 1.14397C12.634 0.647967 13.933 1.41397 14.526 2.32297C15.199 2.09197 15.857 1.84197 16.537 1.61497C16.5239 
                             2.30133 16.2107 2.94749 15.68 3.38297C16.365 3.55297 16.984 2.89197 16.984 2.89197C16.815 3.89197 15.978 4.67997 15.421 
                             4.91597C15.19 11.666 12.246 16.133 5.344 15.998H4.898C4.488 15.998 0.734 15.538 0 14.111C2.271 14.307 3.893 13.689 4.693 
@@ -238,7 +248,8 @@
                     <li>
                         <a class="social-button" href="https://youtube.com/">
                             <span class="visually-hidden">Ютуб</span>
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="#fff"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65
                              0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="#fff" />
                             </svg>
