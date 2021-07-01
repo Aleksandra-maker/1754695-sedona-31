@@ -135,7 +135,7 @@ img {
 }
 
 .background {
-    background-image: url(img/background.jpg);
+    background: red url("../img/background.jpg") no-repeat center center;
     z-index: 99;
     position: relative;
 }
@@ -155,7 +155,8 @@ img {
 
 .title_foto {
     position: relative;
-    height: 509px
+    min-height: 509px;
+    margin-bottom: 36px;
 }
 
 .fieldset-type {
@@ -231,6 +232,9 @@ img {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    width: 450px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .reasons-text {
@@ -258,6 +262,118 @@ img {
     background-color: var(--basic-neutral);
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+
+/*===============================*/
+
+.reasons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.reasons-item {
+    width: 33.3%;
+}
+
+.reasons-item-container {}
+
+.reasons-item-wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.reasons-item--spec .reasons-item-wrap {
+    padding-top: 49px;
+    padding-bottom: 30px;
+}
+
+.reasons-caption {
+    padding: 0;
+    margin: 0 auto 30px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.reasons-item--spec .reasons-caption {
+    margin-bottom: 26px;
+}
+
+.reasons-numbers {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto 20px;
+    width: 100px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.reasons-item--spec .reasons-numbers {
+    margin-bottom: 25px;
+}
+
+.reasons-description {
+    padding: 0;
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    line-height: 21px;
+}
+
+.reasons-item--spec .reasons-description {
+    width: 316px;
+}
+
+.reasons-item--spec {
+    width: 100%;
+    background-color: #81b3d2;
+    color: white;
+}
+
+.reasons-item--first .reasons-item-container {
+    display: grid;
+    grid-template-columns: 400px 800px;
+}
+
+.reasons-item--first .reasons-item-container::after {
+    content: "";
+    width: 800px;
+    height: 100%;
+    min-height: 256px;
+    background: url("../img/open-range.jpg") no-repeat 0 0;
+    background-size: cover;
+}
+
+.reasons-item--second .reasons-item-container {
+    display: grid;
+    grid-template-columns: 800px 400px;
+}
+
+.reasons-item--second .reasons-item-container::before {
+    content: "";
+    width: 800px;
+    height: 100%;
+    min-height: 256px;
+    background: url("../img/canyon.jpg") no-repeat 0 0;
+    background-size: cover;
+}
+
+.more-reasons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .button {
@@ -505,6 +621,7 @@ input[type="number"]:focus {
 }
 
 .modal-search {
+    display: none;
     top: 250px;
     bottom: auto;
     width: 568px;
@@ -749,8 +866,9 @@ input[type="number"]:focus {
     width: 1200px;
     height: 217px;
     color: var(--basic-white);
-    background-image: url(img/background-catalog\ \(1\).jpg);
+    background-image: url("../img/background-catalog\ \(1\).jpg");
     background-repeat: no-repeat;
+    background-color: red;
     margin: 0;
     padding: 0;
 }
@@ -779,7 +897,7 @@ input[type="number"]:focus {
     top: 0;
     width: 26px;
     height: 23px;
-    background-image: url(img/svg/checkbox-on.svg);
+    background-image: url("../img/svg/checkbox-on.svg");
 }
 
 .filter-input-checkbox+label::before {
@@ -789,7 +907,7 @@ input[type="number"]:focus {
     top: 0;
     width: 23px;
     height: 23px;
-    background-image: url(img/svg/checkbox-off.svg);
+    background-image: url("../img/svg/checkbox-off.svg");
     border-radius: 3px;
 }
 
@@ -800,7 +918,7 @@ input[type="number"]:focus {
     top: 0;
     width: 27px;
     height: 23px;
-    background-image: url(img/svg/checkbox-on.svg);
+    background-image: url("../img/svg/checkbox-on.svg");
 }
 
 .filter-input-checkbox:disabled:checked+label::before {
@@ -810,7 +928,7 @@ input[type="number"]:focus {
     top: 0;
     width: 27px;
     height: 23px;
-    background-image: url(img/svg/checkbox-on-disabled.svg);
+    background-image: url("../img/svg/checkbox-on-disabled.svg");
 }
 
 .filter-input-checkbox:disabled+label::before {
@@ -820,7 +938,7 @@ input[type="number"]:focus {
     top: 0;
     width: 23px;
     height: 23px;
-    background-image: url(img/svg/checkbox-off-disabled.svg);
+    background-image: url("../img/svg/checkbox-off-disabled.svg");
 }
 
 .filter-form {
