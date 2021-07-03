@@ -124,12 +124,15 @@
 
                 </ol>
             </section>
+
             <section class="tour-date">
-                <h2 class="tour-date-caption">Заинтересовались?</h2>
-                <p class="tour-date-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне
-                </p>
-                <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
-                <section class="modal modal-search">
+                <div class="tour-date-container">
+                    <h2 class="tour-date-caption">Заинтересовались?</h2>
+                    <p class="tour-date-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне
+                    </p>
+                    <a href="#" class="button-search">Поиск гостиницы в Седоне</a>
+                </div>
+                <section class="modal modal--show">
 
                     <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
                         <p class="booking-info">
@@ -166,14 +169,14 @@
                             <p class="booking-item-type">
                                 <label for="adult">Взрослые:</label>
                                 <div class="booking-number-input">
-                                    <button class="btn-minus">
+                                    <button class="btn-minus" type="button">
                                     <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="12" height="3" fill="" />
                                     </svg>
                                     </button>
                                     <input class="number-area" type="number" name="num" min="0" max="10" value="1">
-                                    <button class="btn-plus">
+                                    <button class="btn-plus" type="button">
                                     <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -186,7 +189,7 @@
                             <p class="booking-item-type">
                                 <label for="kids">Дети:</label>
                                 <div class="booking-number-input">
-                                    <button class="btn-minus">
+                                    <button class="btn-minus" type="button">
                                     <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="12" height="3" fill="" />
@@ -194,7 +197,7 @@
                                     </button>
                                     <input class="number-area" type="number" name="num" min="0" max="10" value="1">
 
-                                    <button class="btn-plus">
+                                    <button class="btn-plus" type="button">
                                     <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -226,57 +229,25 @@
                 </p>
             </section>
 
-            <!-- <h2 class="visually-hidden">Социальные сети</h2>
-            <div class="icon-container">
-                <span class="visually-hidden">Твиттер</span>
-                <a class="links twitter" href="https://twitter.com/"></a>
-                <span class="visually-hidden">Фейсбук</span>
-                <a  class="links facebook" href="https://facebook.com/" ></a>
-                <span class="visually-hidden">Ютуб</span>
-                <a  class="links youtube" href="https://youtube.com/" ></a>
-            </div> -->
-               
-               
+
+
+
 
             <section class="footer-social">
 
                 <h2 class="visually-hidden">Социальные сети</h2>
                 <ul class="social-list">
                     <li>
-                        <a class="social-button" href="https://twitter.com/">
-                            <span class="visually-hidden">Твиттер</span>
-                            <svg width="17" height="17" viewBox="0 0 17 17" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.949 1.14397C12.634 0.647967 13.933 1.41397 14.526 2.32297C15.199 2.09197 15.857 1.84197 16.537 1.61497C16.5239 
-                            2.30133 16.2107 2.94749 15.68 3.38297C16.365 3.55297 16.984 2.89197 16.984 2.89197C16.815 3.89197 15.978 4.67997 15.421 
-                            4.91597C15.19 11.666 12.246 16.133 5.344 15.998H4.898C4.488 15.998 0.734 15.538 0 14.111C2.271 14.307 3.893 13.689 4.693 
-                            12.934C3.733 12.634 2.014 12.457 1.714 9.98397C2.063 10.09 2.278 10.212 2.904 10.103C1.704 9.24697 0.373 8.52997 0.447 
-                            6.32997C0.732 6.65797 1.514 6.86597 1.787 6.80197C1.084 6.56097 -0.183 3.44197 0.893 1.84997C2.711 3.70397 4.628 5.45597 
-                            8.045 5.62297C8.253 3.32997 9.182 1.79297 10.949 1.14397Z" />
-                            </svg>
-                        </a>
+                        <a class="social-button social-button--twitter" href="https://twitter.com/" aria-label="Твиттер"></a>
                     </li>
                     <li>
-                        <a class="social-button" href="https://facebook.com/">
-                            <span class="visually-hidden">Фейсбук</span>
-                            <svg width="12" height="22" viewBox="0 0 10.15 21.74">
-                                <path
-                                    d="M3.34 1.12A4.77 4.77 0 0 1 6.53
-                             0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
-                                    fill="#fff" />
-                            </svg>
-                        </a>
+                        <a class="social-button social-button--facebook" href="https://facebook.com/" aria-label="Фейсбук"></a>
                     </li>
                     <li>
-                        <a class="social-button" href="https://youtube.com/">
-                            <span class="visually-hidden">Ютуб</span>
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65
-                             0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="#fff" />
-                            </svg>
-                        </a>
+                        <a class="social-button social-button--youtube" href="https://youtube.com/" aria-label="Ютуб"></a>
                     </li>
                 </ul>
-            </section> 
+            </section>
             <p class="footer-copyright">
                 <span>Website by</span>
                 <a class="footer-copy-link" href="https://htmlacademy.ru/intensive/htmlcss">
