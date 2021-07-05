@@ -116,7 +116,7 @@ img {
     color: var(--basic-extra);
 }
 
-.site-nav-link:focus {
+.site-nav-choosen {
     color: var(--basic-light-brown);
 }
 
@@ -150,10 +150,9 @@ img {
 }
 
 .reasons-title {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 470px;
-    padding-left: 365px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -173,13 +172,13 @@ img {
     position: absolute;
     z-index: 100;
     left: 0;
-    bottom: 9px;
+    bottom: 8px;
 }
 
 .title-foto {
     position: relative;
     min-height: 509px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
 }
 
 .fieldset-type {
@@ -203,9 +202,6 @@ img {
     margin-top: 43px;
 }
 
-
-/*===============================*/
-
 .reasons-list {
     list-style: none;
     padding: 0;
@@ -220,22 +216,21 @@ img {
     width: 33.3%;
 }
 
-.reasons-item-container {}
-
 .reasons-item-wrap {
-    padding-top: 46px;
+    padding-top: 47px;
     padding-bottom: 54px;
 }
 
 .reasons-item--spec .reasons-item-wrap {
-    padding-top: 49px;
+    padding-top: 47px;
     padding-bottom: 30px;
 }
 
 .reasons-caption {
     padding: 0;
-    margin: 1px auto 45px 126px;
-    margin-bottom: 27px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    width: 103px;
     width: 151px;
     text-align: center;
     font-weight: bold;
@@ -244,13 +239,13 @@ img {
 }
 
 .reasons-item--spec .reasons-caption {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 
 .reasons-numbers {
     text-align: center;
     padding: 0;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     margin-bottom: 23px;
     width: 100px;
     font-size: 14px;
@@ -258,19 +253,20 @@ img {
 }
 
 .reasons-item--spec .reasons-numbers {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 }
 
 .reasons-description {
     padding: 0;
     margin: 0 auto;
-    -width: 270px;
+    margin-left: 70px;
+    width: 262px;
     text-align: center;
     line-height: 21px;
 }
 
 .reasons-item--spec .reasons-description {
-    width: 325px;
+    width: 302px;
 }
 
 .reasons-item--spec {
@@ -324,7 +320,7 @@ img {
 
 .more-reasons-caption {
     padding: 0;
-    margin: 0 auto 45px;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 26px;
     width: 103px;
@@ -343,6 +339,7 @@ img {
 .more-reasons-description {
     padding: 0;
     margin: 0 auto;
+    margin-left: 52px;
     width: 297px;
     text-align: center;
     font-weight: 400;
@@ -421,7 +418,6 @@ input[type="number"]:focus {
 
 .booking-number-input {
     display: flex;
-    -background-color: red;
 }
 
 .btn-minus {
@@ -518,7 +514,7 @@ input[type="number"]:focus {
 .booking-info label {
     margin-bottom: 9px;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 36px;
     vertical-align: middle;
     font-weight: bold;
 }
@@ -527,7 +523,7 @@ input[type="number"]:focus {
     width: 346px;
     height: 100%;
     padding-right: 230px;
-    padding-left: 14px;
+    padding-left: 11px;
     font: inherit;
     box-sizing: border-box;
     background-color: var(--basic-extra-light);
@@ -560,7 +556,7 @@ input[type="number"]:focus {
 .booking-item label {
     margin-bottom: 9px;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 36px;
     vertical-align: middle;
     font-weight: bold;
     align-self: center;
@@ -573,8 +569,6 @@ input[type="number"]:focus {
 .number-area {
     width: 38px;
     height: 38px;
-    -padding-right: 230px;
-    -padding-left: 14px;
     font: inherit;
     box-sizing: border-box;
     background-color: var(--basic-extra-light);
@@ -585,8 +579,8 @@ input[type="number"]:focus {
     position: absolute;
     width: 21px;
     height: 23px;
-    right: 20px;
-    top: 8px;
+    right: 16px;
+    top: 6px;
     border: none;
 }
 
@@ -678,10 +672,10 @@ input[type="number"]:focus {
     color: var(--basic-white);
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     border: none;
-    margin-top: 25px;
+    margin-top: 53px;
     padding: 0;
 }
 
@@ -702,7 +696,7 @@ input[type="number"]:focus {
     background-color: var(--basic-transparent-white);
     line-height: 26px;
     bottom: 0;
-    height: 120px;
+    height: 127px;
     width: 100%;
 }
 
@@ -710,12 +704,14 @@ input[type="number"]:focus {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    margin: 0 auto 42px 72px;
+    margin: 0 auto;
+    margin-left: 70px;
+    margin-top: 22px;
 }
 
-.footer-contacts {
-    margin: auto;
-    padding: 0;
+.visit-sedona {
+    margin: 0 auto;
+    padding-bottom: 8px;
 }
 
 .footer-phone {
@@ -882,7 +878,7 @@ input[type="number"]:focus {
     color: var(--basic-white);
     background-image: url("../img/background-catalog\ \(1\).jpg");
     background-repeat: no-repeat;
-    background-color: red;
+    background-color: var(--basic-light-blue);
     margin: 0;
     padding: 0;
 }
@@ -1182,11 +1178,23 @@ span {
 }
 
 .footer-copyright {
-    margin: auto;
-    margin-top: 33px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 41px;
     margin-right: 131px;
-    align-items: center;
     padding: 0;
+}
+
+.footer-web {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-right: 15px;
+    padding: 0;   
 }
 
 .footer-copy-svg {
@@ -1237,7 +1245,7 @@ span {
     height: 48px;
     background-color: var(--basic-light-blue);
     color: inherit;
-    margin-top: 21px;
+    margin-top: 34px;
 }
 
 .social-button::after {

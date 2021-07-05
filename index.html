@@ -21,7 +21,7 @@
             <nav class="main-navigation">
                 <ul class="site-nav">
                     <li class="site-nav-item">
-                        <a class="site-nav-link" href="#">Информация</a>
+                        <a class="site-nav-link site-nav-choosen" href="#">Информация</a>
                     </li>
                     <li class="site-nav-item">
                         <a class="site-nav-link" href="#">Фото и видео</a>
@@ -117,7 +117,7 @@
                             <div class="reasons-item-wrap">
                                 <h3 class="reasons-caption">Мало<br> туристов</h3>
                                 <p class="reasons-numbers">— №5 —</p>
-                                <p class="reasons-description">Большинство едет в гранд каньон и толпится там</p>
+                                <p class="reasons-description">Большинство едет в гранд каньон<br> и толпится там</p>
                             </div>
                         </div>
                     </li>
@@ -152,7 +152,7 @@
                         </p>
                         <p class="booking-info">
                             <label for="check-out-date">Дата выезда:</label>
-                            <input class="date-area" id="check-out-date" type="text" name="date" placeholder="04 июля 2017">
+                            <input class="date-area" id="check-out-date" type="text" name="date" placeholder="4 июля 2017">
                             <button class="calendar">
                                 <svg class="calendar-svg" width="21" height="23" viewBox="0 0 21 23" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +175,7 @@
                                         <rect width="12" height="3" fill="" />
                                     </svg>
                                     </button>
-                                    <input class="number-area" type="number" name="num" min="0" max="10" value="1">
+                                    <input class="number-area" type="number" name="num" min="0" max="10" value="2">
                                     <button class="btn-plus" type="button">
                                     <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +195,7 @@
                                         <rect width="12" height="3" fill="" />
                                     </svg>
                                     </button>
-                                    <input class="number-area" type="number" name="num" min="0" max="10" value="1">
+                                    <input class="number-area" type="number" name="num" min="0" max="10" value="0">
 
                                     <button class="btn-plus" type="button">
                                     <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
@@ -213,8 +213,6 @@
 
                 </section>
             </section>
-
-
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249109.4830554523!2d-111.89851514779546!3d34.88006275899473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1624807554655!5m2!1sru!2sru"
                     width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy" title="Карта города Седоны"></iframe>
@@ -223,19 +221,15 @@
         <footer class="main-footer">
             <section class="footer-contacts">
                 <h2 class="visually-hidden">Контакты</h2>
-                <p class="visit-contact">
-                    #VISITSEDONA <br>
+                <div class="visit-contact">
+                    <p class="visit-sedona">#VISITSEDONA</p> 
                     <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-                </p>
+                </div>
             </section>
-
-
-
-
-
             <section class="footer-social">
 
                 <h2 class="visually-hidden">Социальные сети</h2>
+
                 <ul class="social-list">
                     <li>
                         <a class="social-button social-button--twitter" href="https://twitter.com/" aria-label="Твиттер"></a>
@@ -248,8 +242,8 @@
                     </li>
                 </ul>
             </section>
-            <p class="footer-copyright">
-                <span>Website by</span>
+            <div class="footer-copyright">
+                <p class="footer-web">Website by</p>
                 <a class="footer-copy-link" href="https://htmlacademy.ru/intensive/htmlcss">
                     <svg class="footer-copy-svg" width="115" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
@@ -263,7 +257,7 @@
                         </defs>
                     </svg>
                 </a>
-            </p>
+            </div>
         </footer>
 
     </div>
