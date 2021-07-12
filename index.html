@@ -12,7 +12,7 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page-body page-body--index">
     <div class="page-body-container">
         <header class="main-header">
             <a class="main-header-logo">
@@ -21,7 +21,7 @@
             <nav class="main-navigation">
                 <ul class="site-nav">
                     <li class="site-nav-item">
-                        <a class="site-nav-link site-nav-choosen" href="#">Информация</a>
+                        <a class="site-nav-link" href="#">Информация</a>
                     </li>
                     <li class="site-nav-item">
                         <a class="site-nav-link" href="#">Фото и видео</a>
@@ -36,9 +36,8 @@
             </nav>
         </header>
         <main class="container">
-            <section class="title-foto">
-                <img class="title-background" src="img/svg/title.svg" width="1200" height="509" alt="Логотип «Sedona»">
-                <img class="title-mask" src="img/svg/saw-mask.svg " width="1200" height="57" alt="">
+            <section class="title-photo">
+                <img class="title-background" src="img/svg/title.svg" width="456" height="350" alt="Welcome to Sedona">
             </section>
             <section class="reasons">
                 <h1 class="reasons-title">
@@ -132,13 +131,13 @@
                     </p>
                     <a href="#" class="button-search">Поиск гостиницы в Седоне</a>
                 </div>
-                <section class="modal modal--show">
+                <section class="modal">
 
                     <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
                         <p class="booking-info">
                             <label for="check-in-date">Дата заезда:</label>
-                            <input class="date-area" id="check-in-date" type="text" name="date" placeholder="24 апреля 2017">
-                            <button class="calendar">
+                            <input class="date-area date-delivery" id="check-in-date" type="text" name="date-delivery" placeholder="Укажите дату" value="24 апреля 2017" required>
+                            <button class="calendar" type="button" aria-label="Открыть календарь">
                                 <svg class="calendar-svg" width="21" height="23" viewBox="0 0 21 23" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -152,8 +151,8 @@
                         </p>
                         <p class="booking-info">
                             <label for="check-out-date">Дата выезда:</label>
-                            <input class="date-area" id="check-out-date" type="text" name="date" placeholder="4 июля 2017">
-                            <button class="calendar">
+                            <input class="date-area date-departure" id="check-out-date" type="text" name="date-departure" placeholder="Укажите дату" value="4 июля 2017" required>
+                            <button class="calendar" type="button" aria-label="Открыть календарь">
                                 <svg class="calendar-svg" width="21" height="23" viewBox="0 0 21 23" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -166,47 +165,46 @@
                             </button>
                         </p>
                         <div class="booking-item">
-                            <p class="booking-item-type">
+                            <div class="booking-item-type">
                                 <label for="adult">Взрослые:</label>
                                 <div class="booking-number-input">
-                                    <button class="btn-minus" type="button">
-                                    <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="12" height="3" fill="" />
-                                    </svg>
-                                </button>
-                                    <input class="number-area" type="number" name="num" min="0" max="10" value="2">
-                                    <button class="btn-plus" type="button">
-                                    <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                                            fill="" />
-                                    </svg>
-                                </button>
+                                    <button class="btn-minus" type="button" aria-label="Уменьшить на один">
+                                        <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="12" height="3" fill="" />
+                                        </svg>
+                                    </button>
+                                    <input class="number-area" type="number" name="num" id="adult" min="0" max="10" value="2">
+                                    <button class="btn-plus" type="button" aria-label="Увеличить на единицу">
+                                        <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                                                fill="" />
+                                        </svg>
+                                    </button>
                                 </div>
-                            </p>
-                            <p class="booking-item-type">
+                            </div>
+                            <div class="booking-item-type">
                                 <label for="kids">Дети:</label>
                                 <div class="booking-number-input">
-                                    <button class="btn-minus" type="button">
-                                    <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="12" height="3" fill="" />
-                                    </svg>
-                                </button>
-                                    <input class="number-area" type="number" name="num" min="0" max="10" value="0">
-
-                                    <button class="btn-plus" type="button">
-                                    <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                                            fill="" />
-                                    </svg>
-                                </button>
+                                    <button class="btn-minus" type="button" aria-label="Уменьшить на один">
+                                        <svg class="minus-svg" width="12" height="3" viewBox="0 0 12 3" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="12" height="3" fill="" />
+                                        </svg>
+                                    </button>
+                                    <input class="number-area" type="number" name="num" id="kids" min="0" max="10" value="0">
+                                    <button class="btn-plus" type="button" aria-label="Увеличить на единицу">
+                                        <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                                                fill="" />
+                                        </svg>
+                                    </button>
                                 </div>
-                            </p>
+                            </div>
                         </div>
                         <input class="modal-close" type="submit" value="Найти">
                     </form>
@@ -261,6 +259,7 @@
         </footer>
 
     </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

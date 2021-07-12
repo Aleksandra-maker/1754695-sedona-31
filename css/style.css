@@ -138,8 +138,30 @@ img {
     padding-right: 72px;
 }
 
-.title-background {
+.title-photo {
     background: var(--basic-background) url("../img/background.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 509px;
+    margin-bottom: 41px;
+    color: var(--basic-white);
+    box-sizing: border-box;
+    padding: 76px 50px 57px;
+    text-align: center;
+}
+
+.title-photo::after {
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 57px;
+    background: url("../img/svg/saw-mask.svg") no-repeat center center;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+}
+
+.title-background {
     z-index: 99;
     position: relative;
 }
@@ -158,29 +180,6 @@ img {
     font-weight: 700;
 }
 
-.reasons-title::after {
-    content: "";
-    width: 1200px;
-    height: 100%;
-    min-height: 57px;
-    background: url("../img/svg/saw-mask.svg") no-repeat center center;
-    background-size: cover;
-    margin-bottom: 20px;
-}
-
-.title-mask {
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    bottom: 7px;
-}
-
-.title-foto {
-    position: relative;
-    min-height: 509px;
-    margin-bottom: 35px;
-}
-
 .reasons-title,
 .reasons-text,
 .reasons-item {
@@ -192,7 +191,7 @@ img {
     line-height: 26px;
     font-weight: 400;
     margin-bottom: 52px;
-    margin-top: 46px;
+    margin-top: 43px;
 }
 
 .reasons-list {
@@ -215,8 +214,12 @@ img {
 }
 
 .reasons-item--spec .reasons-item-wrap {
-    padding-top: 49px;
+    padding-top: 46px;
     padding-bottom: 30px;
+}
+
+.reasons-item--second .reasons-item-wrap {
+    padding-top: 48px;
 }
 
 .reasons-caption {
@@ -238,7 +241,7 @@ img {
     text-align: center;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 27px;
+    margin-bottom: 21px;
     width: 100px;
     font-size: 14px;
     line-height: 21px;
@@ -316,7 +319,7 @@ img {
 
 .more-reasons-wrap {
     padding-top: 51px;
-    padding-bottom: 85px;
+    padding-bottom: 83px;
 }
 
 .more-reasons-caption {
@@ -422,28 +425,25 @@ input[type="number"]:focus {
 }
 
 .btn-minus {
-    -position: absolute;
     width: 38px;
     height: 38px;
-    -right: 116px;
-    -top: 0px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .minus-svg {
     fill: var(--basic-neutral-grey);
-    -top: 18px;
-    -left: 13px;
-    -position: absolute;
 }
 
 .btn-plus {
-    -position: absolute;
     width: 38px;
     height: 38px;
-    -right: 39px;
-    -top: 0px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .plus-svg {
@@ -481,7 +481,7 @@ input[type="number"]:focus {
 
 .tour-date-description {
     padding: 0 300px 0;
-    min-height: 92px;
+    min-height: 91px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -502,7 +502,7 @@ input[type="number"]:focus {
     align-items: flex-start;
     width: 100%;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     justify-content: space-between;
     height: 38px;
     position: relative;
@@ -580,7 +580,8 @@ input[type="number"]:focus {
     right: 14px;
     top: 5px;
     border: none;
-    background-position: 0 0;
+    background: none;
+    cursor: pointer;
 }
 
 .calendar-svg {
@@ -640,14 +641,15 @@ input[type="number"]:focus {
     font-weight: bold;
     background-position: 0 0;
     padding: 0;
-    transform: translate(-50%, 0);
+    transform: translateY(100%);
+    margin-left: -284px;
     width: 568px;
     z-index: 300;
     transition: all 2s;
 }
 
-.modal--show {
-    transform: translate(-50%, 100%);
+.modal--close {
+    transform: translateY(0);
 }
 
 .modal-close {
@@ -661,7 +663,7 @@ input[type="number"]:focus {
     font-weight: 700;
     text-transform: uppercase;
     border: none;
-    margin-top: 53px;
+    margin-top: 55px;
     padding: 0;
     font-family: inherit;
 }
@@ -675,16 +677,19 @@ input[type="number"]:focus {
 }
 
 .main-footer {
-    position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     color: var(--basic-black);
     background-color: var(--basic-transparent-white);
     line-height: 26px;
-    bottom: 0;
-    height: 129px;
+    padding-bottom: 43px;
     width: 100%;
+}
+
+.page-body--index .main-footer {
+    position: absolute;
+    bottom: 0;
 }
 
 .visit-contact {
@@ -808,12 +813,17 @@ input[type="number"]:focus {
 
 .filter-inner-item:active {
     color: var(--basic-black);
-    border-bottom: none;
+    border-color: transparent;
 }
 
 .filter-inner-item:focus {
     color: var(--basic-light-blue);
-    border-bottom: none;
+    border-color: transparent;
+}
+
+.filter-inner-item--active {
+    color: var(--basic-light-blue);
+    border-color: transparent;
 }
 
 .sort {
@@ -831,6 +841,7 @@ input[type="number"]:focus {
     justify-content: space-between;
     text-align: center;
     margin-right: 67px;
+    margin-top: 6px;
 }
 
 .sort-arrows-btn {
@@ -839,48 +850,61 @@ input[type="number"]:focus {
     border: transparent;
 }
 
-.icon-down-svg path,
+.icon-down-svg,
 .icon-up-svg {
     fill: var(--basic-light-grey);
 }
 
-.icon-down-svg:hover path,
-.icon-up-svg:hover {
+.sort-arrows-btn:hover .icon-down-svg,
+.sort-arrows-btn:hover .icon-up-svg {
     fill: var(--basic-black);
 }
 
-.icon-down-svg:active path,
-.icon-up-svg:active {
+.sort-arrows-btn:active .icon-down-svg,
+.sort-arrows-btn:active .icon-up-svg {
     fill: var(--basic-light-blue);
 }
 
-.icon-down-svg:focus path,
-.icon-up-svg:focus {
+.sort-arrows-btn:focus .icon-down-svg,
+.sort-arrows-btn:focus .icon-up-svg {
+    fill: var(--basic-light-blue);
+}
+
+.sort-arrows--active .icon-down-svg,
+.sort-arrows--active .icon-up-svg {
     fill: var(--basic-light-blue);
 }
 
 .filter {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    justify-content: space-between;
     width: 1200px;
-    height: 216px;
     color: var(--basic-white);
-    background-image: url("../img/background-catalog\ \(1\).jpg");
+    background-image: url("../img/background-catalog.jpg");
     background-repeat: no-repeat;
     background-color: var(--basic-light-blue);
     margin: 0;
     padding: 0;
+    padding-top: 23px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-bottom: 13px;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-habit-container {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .filter-habit {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
     padding: 0;
-    margin-bottom: 52px;
-    margin-left: 60px;
+    width: 220px;
+    margin-right: 34px;
 }
 
 .filter-list label {
@@ -888,17 +912,14 @@ input[type="number"]:focus {
     display: block;
     cursor: pointer;
     user-select: none;
-    margin-right: 102px;
-    left: 41px;
-    margin-top: 20px;
-    margin: 21px 10px 10px 1px;
+    padding-left: 42px;
 }
 
 .filter-input-checkbox-on+label::before {
     content: "";
     position: absolute;
-    left: -41px;
-    top: 0;
+    left: 0;
+    top: 3px;
     width: 26px;
     height: 23px;
     background-image: url("../img/svg/checkbox-on.svg");
@@ -908,8 +929,8 @@ input[type="number"]:focus {
 .filter-input-checkbox+label::before {
     content: "";
     position: absolute;
-    left: -41px;
-    top: 0;
+    left: 0;
+    top: 3px;
     width: 23px;
     height: 23px;
     background-image: url("../img/svg/checkbox-off.svg");
@@ -919,8 +940,8 @@ input[type="number"]:focus {
 .filter-input-checkbox:checked+label::before {
     content: "";
     position: absolute;
-    left: -41px;
-    top: 0;
+    left: 0;
+    top: 3px;
     width: 27px;
     height: 23px;
     background-image: url("../img/svg/checkbox-on.svg");
@@ -930,8 +951,8 @@ input[type="number"]:focus {
 .filter-input-checkbox:disabled:checked+label::before {
     content: "";
     position: absolute;
-    left: -41px;
-    top: 0;
+    left: 0;
+    top: 3px;
     width: 27px;
     height: 23px;
     background-image: url("../img/svg/checkbox-on-disabled.svg");
@@ -941,12 +962,16 @@ input[type="number"]:focus {
 .filter-input-checkbox:disabled+label::before {
     content: "";
     position: absolute;
-    left: -41px;
-    top: 0;
+    left: 0;
+    top: 3px;
     width: 23px;
     height: 23px;
     background-image: url("../img/svg/checkbox-off-disabled.svg");
     background-position: 0 0;
+}
+
+.filter-input-checkbox:focus+label {
+    color: #a7c6da;
 }
 
 .filter-form {
@@ -955,17 +980,18 @@ input[type="number"]:focus {
     margin-left: auto;
 }
 
-.fieldset {
-    border: 0 none;
-    margin-top: 26px;
-}
-
-.fieldset-type,
-.fieldset-type-second {
+.fieldset-type {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24px;
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
-    margin-right: 32px;
+}
+
+.fieldset-range {
+    margin-bottom: 10px;
+    padding-top: 2px;
 }
 
 .filter-list {
@@ -974,12 +1000,13 @@ input[type="number"]:focus {
     padding: 0;
 }
 
+.filter-list-item {
+    margin-bottom: 19px;
+}
+
 .filter-item {
     position: relative;
     padding: 0;
-    margin-top: 27px;
-    margin-bottom: 4px;
-    margin-left: 27px;
     border: none;
     width: 317px;
 }
@@ -989,8 +1016,8 @@ input[type="number"]:focus {
     position: absolute;
     width: 2px;
     height: 22px;
-    top: 8px;
-    right: 227px;
+    top: 41px;
+    right: 157px;
     background-color: var(--basic-white);
 }
 
@@ -1007,7 +1034,7 @@ input[type="number"]:focus {
     height: 10px;
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     padding-right: 20px;
     padding-left: 0;
     padding-top: 20px;
@@ -1068,28 +1095,34 @@ input[type="number"]:focus {
     border: 2px solid var(--basic-white);
     width: 313px;
     height: 34px;
-    margin-right: 71px;
 }
 
-.price-controls label {
+.price-controls-group {
+    width: 50%;
+    display: flex;
+}
+
+.price-label {
     text-transform: uppercase;
     line-height: 21px;
     font-size: 14px;
+    width: 55%;
+    text-align: right;
+    padding-top: 7px;
 }
 
 .price-controls input {
     font-size: inherit;
-    width: 60px;
-    text-align: center;
+    text-align: left;
     color: var(--basic-white);
     border-radius: 2px;
     background-color: transparent;
     border: none;
+    width: 50%;
 }
 
-.min-price,
 .max-price {
-    padding-top: 7px;
+    width: 46%;
 }
 
 .cost-button {
@@ -1194,47 +1227,34 @@ input[type="number"]:focus {
     margin-right: 70px;
 }
 
-.rating-star-amara::before {
+.rating-star::before {
     content: "";
     position: absolute;
     right: 0;
     top: 10px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-image: url("../img/svg/Stars.svg");
+    background-position: 0 0;
+}
+
+.rating-star--four::before {
     width: 90px;
-    height: 19px;
-    background-repeat: no-repeat;
-    background-image: url("../img/svg/Stars.svg");
-    background-position: 0 0;
 }
 
-.rating-star-desert::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 9px;
+.rating-star--three::before {
     width: 66px;
-    height: 19px;
-    background-repeat: no-repeat;
-    background-image: url("../img/svg/Stars.svg");
-    background-position: 0 0;
 }
 
-.rating-star-villas::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 10px;
+.rating-star--two::before {
     width: 42px;
-    height: 19px;
-    background-repeat: no-repeat;
-    background-image: url("../img/svg/Stars.svg");
-    background-position: 0 0;
 }
 
 .rating-number {
     display: flex;
     flex-direction: row-reverse;
     width: 110px;
-    padding: 3px 12px 3px 15px;
+    padding: 6px 13px 3px 13px;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 21px;
@@ -1275,7 +1295,7 @@ input[type="number"]:focus {
 }
 
 .map img {
-    background: url(img/map.png);
+    background: url("../img/map.jpg");
     display: block;
     width: 1199px;
     height: 594px;
@@ -1310,7 +1330,7 @@ input[type="number"]:focus {
     height: 48px;
     background-color: var(--basic-light-blue);
     color: inherit;
-    margin-top: 34px;
+    margin-top: 35px;
 }
 
 .social-button::after {
@@ -1358,4 +1378,28 @@ input[type="number"]:focus {
     line-height: 26px;
     height: 127px;
     width: 100%;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
