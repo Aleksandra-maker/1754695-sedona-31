@@ -8,8 +8,8 @@
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link href="./css/normalize.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/normalize.min.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body inner-page">
@@ -66,11 +66,11 @@
                                         <label for="filter-hotel">Гостиница</label>
                                     </li>
                                     <li class="filter-list-item">
-                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" disabled>
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="filter-motel">
                                         <label for="filter-motel">Мотель</label>
                                     </li>
                                     <li class="filter-list-item">
-                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="suite" id="filter-suite" disabled checked>
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="suite" id="filter-suite" checked>
                                         <label for="filter-suite">Апартаменты</label>
                                     </li>
                                 </ul>
@@ -93,8 +93,8 @@
                                     <div class="scale">
                                         <div class="bar"></div>
                                     </div>
-                                    <button class="toggle toggle-min" type="button" aria-label="Установить минимальную цену"></button>
-                                    <button class="toggle toggle-max" type="button" aria-label="Установить максимальную цену"></button>
+                                    <a class="toggle toggle-min" aria-label="Установить минимальную цену" href="#"></a>
+                                    <a class="toggle toggle-max" aria-label="Установить максимальную цену" href="#"></a>
                                 </div>
                             </div>
                             <button class="cost-button" type="submit">Показать</button>

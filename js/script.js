@@ -20,5 +20,4 @@ bookingForm.addEventListener("submit", function(event) {
         bookingForm.offsetWidth = bookingForm.offsetWidth;
         bookingForm.classList.add("modal-error");
     }
-
 });
