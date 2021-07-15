@@ -24,6 +24,8 @@
     --basik-white-grey: #EDEDED;
     --toggle: #ABABAB;
     --toggle-shadow: #D4D4D4;
+    --checkbox-focus: #a7c6da;
+    
 }
 
 .page-body-container {
@@ -524,6 +526,7 @@ input[type="number"]:focus {
     padding-top: 1px;
     font: inherit;
     box-sizing: border-box;
+    border: 2px solid transparent;
     background-color: var(--basic-extra-light);
 }
 
@@ -971,7 +974,7 @@ input[type="number"]:focus {
 }
 
 .filter-input-checkbox:focus+label {
-    color: #a7c6da;
+    color: var(--checkbox-focus);
 }
 
 .filter-form {
@@ -1249,6 +1252,14 @@ input[type="number"]:focus {
 .rating-star--two::before {
     width: 42px;
 }
+
+.rating-star--five::before {
+    width: 114pxpx;
+}
+
+.rating-star--one::before {
+    width: 18px;
+} 
 
 .rating-number {
     display: flex;
