@@ -7,7 +7,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link href="./css/normalize.min.css" rel="stylesheet">
     <link href="./css/style.min.css" rel="stylesheet">
 </head>
@@ -45,15 +46,18 @@
                                 <h3 class="fieldset-type">Инфраструктура:</h3>
                                 <ul class="filter-list">
                                     <li class="filter-list-item">
-                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool"
+                                            id="filter-pool" checked>
                                         <label for="filter-pool">Бассейн</label>
                                     </li>
                                     <li class="filter-list-item">
-                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                            name="parking" id="filter-parking">
                                         <label for="filter-parking">Парковка</label>
                                     </li>
                                     <li class="filter-list-item">
-                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                            name="wi-fi" id="filter-wi-fi">
                                         <label for="filter-wi-fi">WI-FI</label>
                                     </li>
                                 </ul>
@@ -62,15 +66,18 @@
                                 <h3 class="fieldset-type">Тип жилья:</h3>
                                 <ul class="filter-list">
                                     <li class="filter-list-item">
-                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                            name="hotel" id="filter-hotel" checked>
                                         <label for="filter-hotel">Гостиница</label>
                                     </li>
                                     <li class="filter-list-item">
-                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="filter-motel">
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                            name="motel" id="filter-motel">
                                         <label for="filter-motel">Мотель</label>
                                     </li>
                                     <li class="filter-list-item">
-                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="suite" id="filter-suite" checked>
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                            name="suite" id="filter-suite" checked>
                                         <label for="filter-suite">Апартаменты</label>
                                     </li>
                                 </ul>
@@ -82,11 +89,13 @@
                                 <div class="price-controls">
                                     <div class="price-controls-group">
                                         <label class="price-label min-price" for="min-price">от</label>
-                                        <input type="number" name="min-price" id="min-price" value="0" min="0" max="10000" step="100">
+                                        <input type="number" name="min-price" id="min-price" value="0" min="0"
+                                            max="10000" step="100">
                                     </div>
                                     <div class="price-controls-group">
                                         <label class="price-label max-price" for="max-price">до</label>
-                                        <input type="number" name="max-price" id="max-price" value="3000" min="0" max="10000" step="100">
+                                        <input type="number" name="max-price" id="max-price" value="3000" min="0"
+                                            max="10000" step="100">
                                     </div>
                                 </div>
                                 <div class="range-controls">
@@ -118,7 +127,8 @@
                         </svg>
                     </button>
 
-                    <button class="sort-arrows-btn sort-arrows--active" data-sort="descending" aria-label="Сортировка по убыванию">
+                    <button class="sort-arrows-btn sort-arrows--active" data-sort="descending"
+                        aria-label="Сортировка по убыванию">
                         <svg class="icon-down-svg" width="11" height="10" viewBox="0 0 11 10" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.5 10L0 0H11" fill="" />
@@ -129,14 +139,17 @@
             <section class="sorting-list">
                 <div class="section-item">
                     <img class="hotel-img" src="img/hotels/amara_resort.jpg" width="135" height="90" alt="Фото">
-                    <div class="section-item-info">
+                    <div class="hotel-info-container">
                         <a class="link-hotel" href="#">
                             <h3 class="hotel-name">Amara Resort & Spa</h3>
                         </a>
-                        <p class="hotel-item">Гостиница</p>
-                        <p class="price">От 4000 ₽</p>
-                        <button class="button-more" type="button">Подробнее</button>
-                        <button class="button-booking" type="button">Забронировать</button>
+                        <div class="section-item-info">
+
+                            <p class="hotel-item">Гостиница</p>
+                            <p class="price">От 4000 ₽</p>
+                            <button class="button-more" type="button">Подробнее</button>
+                            <button class="button-booking" type="button">Забронировать</button>
+                        </div>
                     </div>
                     <div class="rating">
                         <div class="rating-star rating-star--four"></div>
@@ -145,14 +158,17 @@
                 </div>
                 <div class="section-item">
                     <img class="hotel-img" src="img/hotels/desert_inn.jpg" width="135" height="90" alt="Фото">
-                    <div class="section-item-info">
+                    <div class="hotel-info-container">
                         <a class="link-hotel" href="#">
                             <h3 class="hotel-name">Desert Quail Inn</h3>
                         </a>
-                        <p class="hotel-item">Мотель</p>
-                        <p class="price">От 3000 ₽</p>
-                        <button class="button-more" type="button">Подробнее</button>
-                        <button class="button-booking" type="button">Забронировать</button>
+                        <div class="section-item-info">
+
+                            <p class="hotel-item">Мотель</p>
+                            <p class="price">От 3000 ₽</p>
+                            <button class="button-more" type="button">Подробнее</button>
+                            <button class="button-booking" type="button">Забронировать</button>
+                        </div>
                     </div>
                     <div class="rating">
                         <div class="rating-star rating-star--three"></div>
@@ -161,14 +177,17 @@
                 </div>
                 <div class="section-item">
                     <img class="hotel-img" src="img/hotels/villas.jpg" width="135" height="90" alt="Фото">
-                    <div class="section-item-info">
+                    <div class="hotel-info-container">
                         <a class="link-hotel" href="#">
                             <h3 class="hotel-name">Villas at Poco Diablo</h3>
                         </a>
-                        <p class="hotel-item">Апартаменты</p>
-                        <p class="price">От 2000 ₽</p>
-                        <button class="button-more" type="button">Подробнее</button>
-                        <button class="button-booking" type="button">Забронировать</button>
+                        <div class="section-item-info">
+
+                            <p class="hotel-item">Апартаменты</p>
+                            <p class="price">От 2000 ₽</p>
+                            <button class="button-more" type="button">Подробнее</button>
+                            <button class="button-booking" type="button">Забронировать</button>
+                        </div>
                     </div>
                     <div class="rating">
                         <div class="rating-star rating-star--two"></div>
@@ -186,18 +205,19 @@
                 </div>
             </section>
             <section class="footer-social">
-
                 <h2 class="visually-hidden">Социальные сети</h2>
-
                 <ul class="social-list">
-                    <li>
-                        <a class="social-button social-button--twitter" href="https://twitter.com/" aria-label="Твиттер"></a>
+                    <li class="social-item">
+                        <a class="social-button social-button--twitter" href="https://twitter.com/"
+                            aria-label="Твиттер"></a>
                     </li>
-                    <li>
-                        <a class="social-button social-button--facebook" href="https://facebook.com/" aria-label="Фейсбук"></a>
+                    <li class="social-item">
+                        <a class="social-button social-button--facebook" href="https://facebook.com/"
+                            aria-label="Фейсбук"></a>
                     </li>
-                    <li>
-                        <a class="social-button social-button--youtube" href="https://youtube.com/" aria-label="Ютуб"></a>
+                    <li class="social-item">
+                        <a class="social-button social-button--youtube" href="https://youtube.com/"
+                            aria-label="Ютуб"></a>
                     </li>
                 </ul>
             </section>
